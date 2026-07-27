@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "AI Home Inventory",
+    "slug": "ai-home-inventory",
+    "version": "0.1.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "scheme": "aihomeinventory",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourcompany.aihomeinventory",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Wir ben\u00f6tigen die Kamera, um deine R\u00e4ume und Gegenst\u00e4nde zu scannen.",
+        "NSPhotoLibraryUsageDescription": "Wir ben\u00f6tigen Zugriff auf deine Fotos, um Gegenst\u00e4nde aus bestehenden Bildern zu erkennen."
+      }
+    },
+    "android": {
+      "package": "com.yourcompany.aihomeinventory",
+      "permissions": ["CAMERA", "READ_MEDIA_IMAGES"]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Wir ben\u00f6tigen die Kamera, um deine R\u00e4ume zu scannen."
+        }
+      ]
+    ]
+  }
+}
